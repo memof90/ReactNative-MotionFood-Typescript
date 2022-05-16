@@ -20,7 +20,7 @@ export const pizzas: Array<PizzaProps> = [
             medium: 0,
             large: 0,
         },
-        image: require("../../../assets/empty.png"),
+        image: require("../../assets/empty.png"),
     },
     {
         name: "Italian",
@@ -30,7 +30,7 @@ export const pizzas: Array<PizzaProps> = [
             medium: 7.5,
             large: 9.5,
         },
-        image: require("../../../assets/itallian-pizza.png"),
+        image: require("../../assets/itallian-pizza.png"),
     },
     {
         name: "Veggie",
@@ -40,7 +40,7 @@ export const pizzas: Array<PizzaProps> = [
             medium: 8,
             large: 10,
         },
-        image: require("../../../assets/veggie-pizza.png"),
+        image: require("../../assets/veggie-pizza.png"),
     },
     {
         name: "Greek",
@@ -50,6 +50,6 @@ export const pizzas: Array<PizzaProps> = [
             medium: 9.5,
             large: 11.5,
         },
-        image: require("../../../assets/greek-pizza.png"),
+        image: require("../../assets/greek-pizza.png"),
     },
 ];
