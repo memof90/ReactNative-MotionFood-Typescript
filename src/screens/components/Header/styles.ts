@@ -2,17 +2,17 @@ import Animated from "react-native-reanimated";
 import styled from "styled-components/native";
 
 export const Header = styled.View`
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 25px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
 `;
 
 export const TextArea = styled.View`
-  flex: 1;
-  align-items: center;
-  height: 75px;
+    flex: 1;
+    align-items: center;
+    height: 75px;
 `;
 
 export const Title = styled(Animated.Text)`

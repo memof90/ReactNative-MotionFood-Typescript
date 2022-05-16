@@ -1877,10 +1877,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-native@~0.66.13":
-  "integrity" "sha512-a+xIlll1Wo4rhBPdoecH6VfvMgm8dcMScJgO5GSt+BB+7rMX/UOTWmfAV7BXx/x4okf2Tu6nSbEygnNYgNtp2A=="
-  "resolved" "https://registry.npmjs.org/@types/react-native/-/react-native-0.66.18.tgz"
-  "version" "0.66.18"
+"@types/react-native@~0.67.6":
+  "integrity" "sha512-G7vi9vE226diNNXVNbIa8HH/wPxMWHTHkn9iQtQSezaWzO5WNsKZZW2/TOzCehtBDVx4MZieTs6GsdtpBBttMA=="
+  "resolved" "https://registry.npmjs.org/@types/react-native/-/react-native-0.67.7.tgz"
+  "version" "0.67.7"
   dependencies:
     "@types/react" "*"
 

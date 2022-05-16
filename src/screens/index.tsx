@@ -1,19 +1,28 @@
 //import liraries
 import React, {useState} from 'react';
-import { View, Text } from 'react-native';
-import Header from './components/Header';
+import { useWindowDimensions } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+
+
+import * as S from './styles';
+
 import Content from './components/Content';
 import OptionSlider from './components/OptionSlider/index';
+import Header from './components/Header/index';
+
+import CartIcon from "../assets/cart.svg";
 
 // create a component
 const Main = () => {
+    const { width } = useWindowDimensions();
+
     const [currentIndex, setCurrentIndex] = useState(0);
 
     return (
-        <View> 
-            <Header index={currentIndex} />
-            <Text>Hello World</Text>
-        </View>
+        <S.Container> 
+            <StatusBar style="dark" />
+            <Header index={currentIndex}/>
+        </S.Container>
     );
 };
 

@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import Bottom from "../../assets/bottom.svg";
+import Bottom from "../assets/bottom.svg";
 
 export const Container = styled.SafeAreaView`
     flex: 1;
