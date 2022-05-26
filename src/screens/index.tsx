@@ -17,11 +17,13 @@ const Main = () => {
     const { width } = useWindowDimensions();
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [aditionals, setAditionals] = useState([]);
 
     return (
         <S.Container> 
             <StatusBar style="dark" />
             <Header index={currentIndex}/>
+            <Content index={currentIndex} aditionals={aditionals} setIndex={setCurrentIndex}/>
         </S.Container>
     );
 };
