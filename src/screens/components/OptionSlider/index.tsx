@@ -17,7 +17,7 @@ interface Props {
   }
 
 // create a component
-const OptionSlider = ({ aditionals,setAditionals }: Props) => {
+const OptionSlider = ({ aditionals, setAditionals }: Props) => {
 
     function add(additional: Additional) {
         if (aditionals.length < 3) {
