@@ -64,7 +64,6 @@ const Content = ({ index, aditionals, setIndex }: Props) => {
   const price = pizzas[index].prices[size] + addPrice;
 
   useEffect(() => {
-
     const prevIsLarge = boardScale.value > 1;
     const prevIsSmall = boardScale.value === 0.85;
     const transTime1 = { duration: 150 };
@@ -145,37 +144,37 @@ const Content = ({ index, aditionals, setIndex }: Props) => {
       <S.Leaves source={leaves} style={leavesImageAnimatedStyle} />
       <AddButtons index={index} />
       <FlatList
-        data={pizzas}
-        keyExtractor={(pizza) => pizza.name}
-        disableIntervalMomentum
-        pagingEnabled
-        decelerationRate="fast"
-        snapToAlignment="center"
-        onViewableItemsChanged={onViewRef.current}
-        viewabilityConfig={viewConfigRef.current}
-        onScroll={scrollHandler}
-        renderItem={({ item }) => (
-          <S.PizzaContent>
-            <Additionals aditionals={aditionals} />
-            <S.Pizza source={item.prices} style={pizzaImageAnimatedStyle} />
-          </S.PizzaContent>
-        )}
-        showsHorizontalScrollIndicator={false}
-        horizontal
-        style={{ position: "absolute", overflow: "visible", width: "100%" }}
-      />
+          data={pizzas}
+          keyExtractor={(pizza) => pizza.name}
+          disableIntervalMomentum
+          pagingEnabled
+          decelerationRate="fast"
+          snapToAlignment="center"
+          onViewableItemsChanged={onViewRef.current}
+          viewabilityConfig={viewConfigRef.current}
+          onScroll={scrollHandler}
+          renderItem={({ item }) => (
+            <S.PizzaContent>
+              <Additionals aditionals={aditionals} />
+              <S.Pizza source={item.image} style={pizzaImageAnimatedStyle} />
+            </S.PizzaContent>
+          )}
+          showsHorizontalScrollIndicator={false}
+          horizontal
+          style={{ position: "absolute", overflow: "visible", width: "100%" }}
+        />
     </S.ImageContent>
     <S.Price>
-      $
-      <CountUp
-        key={`${price}`}
-        start={price < previowsPrice ? price : previowsPrice}
-        end={price > previowsPrice ? price : previowsPrice}
-        duration={1}
-        isCounting
-        formatter={(value) => value.toFixed(2)}
-      />
-    </S.Price>
+        $
+        <CountUp
+          key={`${price}`}
+          start={price < previowsPrice ? price : previowsPrice}
+          end={price > previowsPrice ? price : previowsPrice}
+          duration={1}
+          isCounting
+          formatter={(value) => value.toFixed(2)}
+        />
+      </S.Price>
     <S.Options>
       <S.OptionsButtonText onPress={() => setSize("s")}>
         <S.OptionsText isSelected={size === "s"}>S</S.OptionsText>

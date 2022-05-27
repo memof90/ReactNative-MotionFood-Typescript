@@ -8,7 +8,7 @@ import {
 
 import * as S from "./styles";
 
-import tomato from "../../../../../assets/tomato.png";
+import tomato from "../../../../../assets/piece-tomato.png";
 import { Additional } from '../../../OptionSlider/index';
 
 interface Props {
