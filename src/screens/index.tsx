@@ -7,7 +7,7 @@ import { StatusBar } from 'expo-status-bar';
 import * as S from './styles';
 
 import Content from './components/Content';
-import OptionSlider from './components/OptionSlider/index';
+import OptionSlider from './components/OptionSlider';
 import Header from './components/Header/index';
 
 import CartIcon from "../assets/cart.svg";
@@ -24,6 +24,12 @@ const Main = () => {
             <StatusBar style="dark" />
             <Header index={currentIndex}/>
             <Content index={currentIndex} aditionals={aditionals} setIndex={setCurrentIndex}/>
+            <OptionSlider aditionals={aditionals} setAditionals={setAditionals} />
+            <S.AddButton style={{marginBottom: -20}}>
+                <CartIcon width={30} height={30} />
+                <S.AddButtonText>Add to cart</S.AddButtonText>
+            </S.AddButton>
+            <S.BottomBar width={width} />
         </S.Container>
     );
 };
